@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>produtos - Amigões Pet</title>
+    <link rel="stylesheet" href="css\estilo.css">
+    <script src="js\funcoes.js"></script>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Início do Menu-->
+    <nav class="navbar navbar-dark bg-success px-5">
+        <a href="index.html"><img width="100px" src="imagens\logo.png"></a>
+        <a class="text-light" href="produtos.html">Amigões de estimação</a>
+        <a class="text-light" href="loja.html">Nossas lojas</a>
+        <a class="text-light" href="contato.html">Contato</a>
+    </nav>
+    <!--Fim do Menu-->
+
+    <header>
+        <h2 class="px-3">Amigões de estimação</h2>
+    </header>
+    <hr>
+    <div class="principal">
+        <section class="categorias">
+            <h3 class="px-3">Categorias</h3>
+            <ul>
+                <li onclick="exibirTodos()">Todos (12)</li>
+                <li onclick="exibirCategoria('gatofilhote')">Gatos filhotes (4)</li>
+                <li onclick="exibirCategoria('gatoadulto')">Gatos adultos (4)</li>
+                <li onclick="exibirCategoria('cachorrofihlote')">Cachorros filhotes (4)</li>
+                <li onclick="exibirCategoria('cachorroadulto')">Cachorros adultos (4)</li>
+            </ul>
+        </section>
+        <div class="secundario container-fluid">
+            <section class="produtos">
+                <div class="estilop" id="gatofilhote">
+                    <img src="imagens\gfilhote1.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Gato filhote</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="gatofilhote">
+                    <img src="imagens\gfilhote2.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Gato filhote</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="gatofilhote">
+                    <img src="imagens\gfilhote3.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Gato filhote</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="gatofilhote">
+                    <img src="imagens\gfilhote4.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Gato filhote</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+            </section>
+
+            <section>
+                <div class="estilop" id="gatoadulto">
+                    <img src="imagens\gadulto1.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Gato adulto</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="gatoadulto">
+                    <img src="imagens\gadulto2.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Gato adulto</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="gatoadulto">
+                    <img src="imagens\gadulto3.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Gato adulto</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="gatoadulto">
+                    <img src="imagens\gadulto4.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Gato adulto</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="precotext-success">R$ 250,00</p><br>
+                </div>
+            </section>
+
+            <section>
+                <div class="estilop" id="cachorrofihlote">
+                    <img src="imagens\cfilhote1.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Cachorro filhote</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="cachorrofihlote">
+                    <img src="imagens\cfilhote2.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Cachorro filhote</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="cachorrofihlote">
+                    <img src="imagens\cfilhote3.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Cachorro filhote</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="cachorrofihlote">
+                    <img src="imagens\cfilhote4.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Cachorro filhote</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+            </section>
+
+            <section>
+                <div class="estilop" id="cachorroadulto">
+                    <img src="imagens\cadulto1.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Cachorro adulto</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="cachorroadulto">
+                    <img src="imagens\cadulto2.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Cachorro adulto</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="cachorroadulto">
+                    <img src="imagens\cadulto3.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Cachorro adulto</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+
+                <div class="estilop" id="cachorroadulto">
+                    <img src="imagens\cadulto4.jpg" width="120px" onclick="destaque(this)">
+                    <br>
+                    <p class="descricao">Cachorro adulto</p>
+                    <hr>
+                    <p class="descricao"><strike>R$ 500,00</strike></p><br>
+                    <p class="preco text-success">R$ 250,00</p><br>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer id="rodape">
+        <p id="formas_pagamento" class="text-success"><strong>Formas de pagamento</strong></p>
+        <img src="imagens\formasdepagamento.png" alt="Formas de pagamento">
+        <p>&copy; Amigão Pet</p>
+    </footer>
+</body>
+
+</html>
